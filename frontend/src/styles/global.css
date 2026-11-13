@@ -33,3 +33,25 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #027a48; }
+.warn-text { color: #b54708; }
+
+/* 方案发行包工作区 */
+.tab-switch { display: flex; gap: 8px; }
+.solution-grid { display: grid; grid-template-columns: minmax(320px, 5fr) minmax(420px, 7fr); gap: 14px; align-items: start; }
+.solution-grid .full-span { grid-column: 1 / -1; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.panel h3 { margin: 0 0 10px; font-size: 15px; }
+.panel h4 { margin: 14px 0 6px; font-size: 13px; color: #344054; }
+.data-table.compact th, .data-table.compact td { padding: 6px 8px; font-size: 12px; }
+.data-table tr.row-selected { background: #eff6ff; cursor: pointer; }
+.badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; white-space: nowrap; }
+.badge.info { background: #e0eaff; color: #1849a9; }
+.badge.ok { background: #d1fadf; color: #027a48; }
+.badge.warn { background: #fef0c7; color: #b54708; }
+.mono { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 12px; word-break: break-all; }
+.hint { color: var(--muted); font-size: 12px; margin: 6px 0; }
+.inline-form { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+.inline-form input, .inline-form select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+@media (max-width: 1100px) { .solution-grid { grid-template-columns: 1fr; } }
